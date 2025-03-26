@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Quality Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌊 Water Quality Prediction</h1>
+
+        <label for="pH">pH Level:</label>
+        <input type="text" id="pH">
+
+        <label for="do">Dissolved Oxygen (DO) (mg/L):</label>
+        <input type="text" id="do">
+
+        <label for="bod">Biochemical Oxygen Demand (BOD) (mg/L):</label>
+        <input type="text" id="bod">
+
+        <label for="turbidity">Turbidity (NTU):</label>
+        <input type="text" id="turbidity">
+
+        <button id="predict">🔍 Predict</button>
+        <p id="predictionResult">Prediction will appear here</p>
+
+        <button id="viewDataset">📊 View Dataset</button>
+        <table id="datasetTable" class="hidden">
+            <thead>
+                <tr>
+                    <th>pH</th>
+                    <th>DO</th>
+                    <th>BOD</th>
+                    <th>Turbidity</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
